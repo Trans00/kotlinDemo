@@ -2,7 +2,7 @@ package schredinger
 
 fun doWork(seconds: Int) {
     println("Going to work for $seconds seconds on thread ${Thread.currentThread().name}")
-    (1..seconds).forEach {
+    for (i in 1..seconds) {
         println("Working on thread ${Thread.currentThread().name}...")
         Thread.sleep(1000L)
     }
