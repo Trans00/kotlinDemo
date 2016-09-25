@@ -10,6 +10,11 @@ fun main(args: Array<String>) {
         println("length is ${notNull.length}")
     }
 
+//    notNull.length
+    if(notNull == null) throw IllegalStateException()
+
+    notNull.length
+
     val string : Any = "String"
 
 //    string.length
